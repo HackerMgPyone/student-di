@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="org.example.bean.Student" autowire="byType">
+        <property name="name" value="Mg Mg"/>
+<!--        <constructor-arg name="address" ref="address"/>-->
+    </bean>
+    <bean id="address" class="org.example.bean.Address">
+        <property name="city" value="Keen City"/>
+    </bean>
+</beans>
